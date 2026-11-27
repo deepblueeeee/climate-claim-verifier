@@ -1,0 +1,9 @@
+bm25s>=0.2.7,<0.3
+faiss-cpu>=1.9,<2
+nltk>=3.9,<4
+numpy>=1.26,<3
+scikit-learn>=1.5,<2
+sentence-transformers>=3.4,<4
+torch>=2.6,<3
+tqdm>=4.66,<5
+transformers>=4.49,<4.50

@@ -1,0 +1,23 @@
+{
+  "dev_accuracy": 0.5909090909090909,
+  "members": [
+    {
+      "name": "distil_roberta:seed29:epoch7:all",
+      "checkpoint": "predictions/end_to_end_classifiers/reranker_top5/distil_roberta/seed_29_epoch_7",
+      "weight": 0.30000001192092896,
+      "individual_accuracy": 0.5194805194805194
+    },
+    {
+      "name": "roberta_base:seed29:epoch6:all",
+      "checkpoint": "predictions/end_to_end_classifiers/reranker_top5/roberta_base/seed_29_epoch_6",
+      "weight": 0.30000001192092896,
+      "individual_accuracy": 0.564935064935065
+    },
+    {
+      "name": "roberta_mnli:seed29:epoch4:all",
+      "checkpoint": "predictions/end_to_end_classifiers/reranker_top5/roberta_mnli/seed_29_epoch_4",
+      "weight": 0.4000000059604645,
+      "individual_accuracy": 0.5324675324675324
+    }
+  ]
+}

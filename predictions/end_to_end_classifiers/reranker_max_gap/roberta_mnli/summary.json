@@ -1,0 +1,47 @@
+{
+  "runs": [
+    {
+      "seed": 29,
+      "accuracy": 0.5584415584415584,
+      "dev_loss": 1.337482248033796,
+      "epoch": 4,
+      "train_loss": 0.6777013447377589,
+      "checkpoint": "predictions/end_to_end_classifiers/reranker_max_gap/roberta_mnli/seed_29_epoch_4",
+      "epoch_records": [
+        {
+          "epoch": 1,
+          "train_loss": 1.2482355821442295,
+          "elapsed_seconds": 33.6973557472229
+        },
+        {
+          "epoch": 2,
+          "train_loss": 1.029810962738929,
+          "elapsed_seconds": 33.421635389328
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.8218796655729219,
+          "elapsed_seconds": 33.640869140625
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.6777013447377589,
+          "elapsed_seconds": 33.72542452812195
+        }
+      ]
+    }
+  ],
+  "args": {
+    "train": "data/classifier_inputs/reranker_max_gap/train.json",
+    "dev": "data/classifier_inputs/reranker_max_gap/dev.json",
+    "run_dir": "predictions/end_to_end_classifiers/reranker_max_gap/roberta_mnli",
+    "model_name": "FacebookAI/roberta-large-mnli",
+    "epochs": 4,
+    "seed": 29,
+    "batch_size": 8,
+    "eval_batch_size": 16,
+    "learning_rate": 1e-05,
+    "max_length": 256,
+    "label_smoothing": 0.1
+  }
+}

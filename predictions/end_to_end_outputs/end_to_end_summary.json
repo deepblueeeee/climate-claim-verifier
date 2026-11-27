@@ -1,0 +1,90 @@
+[
+  {
+    "name": "top5_ensemble",
+    "description": "Top 5 reranked passages with the weighted ensemble",
+    "variant": "reranker_top5",
+    "models": [
+      "distil_roberta",
+      "roberta_base",
+      "roberta_mnli"
+    ],
+    "weights": [
+      0.3,
+      0.3,
+      0.4
+    ],
+    "dev_prediction": "predictions/end_to_end_outputs/top5_ensemble_dev_prediction.json",
+    "test_output": "predictions/end_to_end_outputs/top5_ensemble_test_output.json",
+    "metrics": {
+      "evidence_f": 0.24127499484642345,
+      "claim_accuracy": 0.5909090909090909,
+      "harmonic_mean": 0.3426443507012257
+    },
+    "eval_stdout": "Evidence Retrieval F-score (F)    = 0.24127499484642345\nClaim Classification Accuracy (A) = 0.5909090909090909\nHarmonic Mean of F and A          = 0.3426443507012257\n"
+  },
+  {
+    "name": "max_gap_ensemble",
+    "description": "Max-gap evidence selection with the weighted ensemble",
+    "variant": "reranker_max_gap",
+    "models": [
+      "distil_roberta",
+      "roberta_base",
+      "roberta_mnli"
+    ],
+    "weights": [
+      0.3,
+      0.3,
+      0.4
+    ],
+    "dev_prediction": "predictions/end_to_end_outputs/max_gap_ensemble_dev_prediction.json",
+    "test_output": "predictions/end_to_end_outputs/max_gap_ensemble_test_output.json",
+    "metrics": {
+      "evidence_f": 0.2546227581941868,
+      "claim_accuracy": 0.5909090909090909,
+      "harmonic_mean": 0.35589174489136094
+    },
+    "eval_stdout": "Evidence Retrieval F-score (F)    = 0.2546227581941868\nClaim Classification Accuracy (A) = 0.5909090909090909\nHarmonic Mean of F and A          = 0.35589174489136094\n"
+  },
+  {
+    "name": "top5_single_distil",
+    "description": "Top 5 reranked passages with DistilRoBERTa",
+    "variant": "reranker_top5",
+    "models": [
+      "distil_roberta"
+    ],
+    "weights": [
+      1.0
+    ],
+    "dev_prediction": "predictions/end_to_end_outputs/top5_single_distil_dev_prediction.json",
+    "test_output": "predictions/end_to_end_outputs/top5_single_distil_test_output.json",
+    "metrics": {
+      "evidence_f": 0.24127499484642345,
+      "claim_accuracy": 0.5194805194805194,
+      "harmonic_mean": 0.32950838291686574
+    },
+    "eval_stdout": "Evidence Retrieval F-score (F)    = 0.24127499484642345\nClaim Classification Accuracy (A) = 0.5194805194805194\nHarmonic Mean of F and A          = 0.32950838291686574\n"
+  },
+  {
+    "name": "rrf_top5_ensemble",
+    "description": "Top 5 RRF passages with the weighted ensemble",
+    "variant": "rrf_top5_no_reranker",
+    "models": [
+      "distil_roberta",
+      "roberta_base",
+      "roberta_mnli"
+    ],
+    "weights": [
+      0.3,
+      0.3,
+      0.4
+    ],
+    "dev_prediction": "predictions/end_to_end_outputs/rrf_top5_ensemble_dev_prediction.json",
+    "test_output": "predictions/end_to_end_outputs/rrf_top5_ensemble_test_output.json",
+    "metrics": {
+      "evidence_f": 0.1948670377241806,
+      "claim_accuracy": 0.551948051948052,
+      "harmonic_mean": 0.28804046235314873
+    },
+    "eval_stdout": "Evidence Retrieval F-score (F)    = 0.1948670377241806\nClaim Classification Accuracy (A) = 0.551948051948052\nHarmonic Mean of F and A          = 0.28804046235314873\n"
+  }
+]

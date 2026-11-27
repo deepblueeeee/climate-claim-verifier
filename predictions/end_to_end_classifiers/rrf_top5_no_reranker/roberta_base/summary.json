@@ -1,0 +1,57 @@
+{
+  "runs": [
+    {
+      "seed": 29,
+      "accuracy": 0.5194805194805194,
+      "dev_loss": 1.191925886389497,
+      "epoch": 6,
+      "train_loss": 0.9144971285547528,
+      "checkpoint": "predictions/end_to_end_classifiers/rrf_top5_no_reranker/roberta_base/seed_29_epoch_6",
+      "epoch_records": [
+        {
+          "epoch": 1,
+          "train_loss": 1.3273824228868856,
+          "elapsed_seconds": 12.295639038085938
+        },
+        {
+          "epoch": 2,
+          "train_loss": 1.2726969115145794,
+          "elapsed_seconds": 13.134933710098267
+        },
+        {
+          "epoch": 3,
+          "train_loss": 1.2350971505239412,
+          "elapsed_seconds": 12.082290410995483
+        },
+        {
+          "epoch": 4,
+          "train_loss": 1.1520624687145282,
+          "elapsed_seconds": 12.16001272201538
+        },
+        {
+          "epoch": 5,
+          "train_loss": 1.0308604623590196,
+          "elapsed_seconds": 13.258134126663208
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.9144971285547528,
+          "elapsed_seconds": 12.286138772964478
+        }
+      ]
+    }
+  ],
+  "args": {
+    "train": "data/classifier_inputs/rrf_top5_no_reranker/train.json",
+    "dev": "data/classifier_inputs/rrf_top5_no_reranker/dev.json",
+    "run_dir": "predictions/end_to_end_classifiers/rrf_top5_no_reranker/roberta_base",
+    "model_name": "roberta-base",
+    "epochs": 6,
+    "seed": 29,
+    "batch_size": 8,
+    "eval_batch_size": 32,
+    "learning_rate": 1e-05,
+    "max_length": 256,
+    "label_smoothing": 0.1
+  }
+}

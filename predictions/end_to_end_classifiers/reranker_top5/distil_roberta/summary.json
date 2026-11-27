@@ -1,0 +1,62 @@
+{
+  "runs": [
+    {
+      "seed": 29,
+      "accuracy": 0.5194805194805194,
+      "dev_loss": 1.3182639425451106,
+      "epoch": 7,
+      "train_loss": 0.7380966159043374,
+      "checkpoint": "predictions/end_to_end_classifiers/reranker_top5/distil_roberta/seed_29_epoch_7",
+      "epoch_records": [
+        {
+          "epoch": 1,
+          "train_loss": 1.3287655564097616,
+          "elapsed_seconds": 8.335310697555542
+        },
+        {
+          "epoch": 2,
+          "train_loss": 1.2058783235488,
+          "elapsed_seconds": 7.388672828674316
+        },
+        {
+          "epoch": 3,
+          "train_loss": 1.1022835486120992,
+          "elapsed_seconds": 7.550638675689697
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.9792259025883365,
+          "elapsed_seconds": 8.592427730560303
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.8748911897857468,
+          "elapsed_seconds": 7.5260021686553955
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.7886556694646935,
+          "elapsed_seconds": 7.430974960327148
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.7380966159043374,
+          "elapsed_seconds": 7.550273895263672
+        }
+      ]
+    }
+  ],
+  "args": {
+    "train": "data/classifier_inputs/reranker_top5/train.json",
+    "dev": "data/classifier_inputs/reranker_top5/dev.json",
+    "run_dir": "predictions/end_to_end_classifiers/reranker_top5/distil_roberta",
+    "model_name": "cross-encoder/nli-distilroberta-base",
+    "epochs": 7,
+    "seed": 29,
+    "batch_size": 8,
+    "eval_batch_size": 32,
+    "learning_rate": 1e-05,
+    "max_length": 256,
+    "label_smoothing": 0.1
+  }
+}

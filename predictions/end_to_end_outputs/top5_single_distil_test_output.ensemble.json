@@ -1,0 +1,11 @@
+{
+  "dev_accuracy": 0.5194805194805194,
+  "members": [
+    {
+      "name": "distil_roberta:seed29:epoch7:all",
+      "checkpoint": "predictions/end_to_end_classifiers/reranker_top5/distil_roberta/seed_29_epoch_7",
+      "weight": 1.0,
+      "individual_accuracy": 0.5194805194805194
+    }
+  ]
+}
